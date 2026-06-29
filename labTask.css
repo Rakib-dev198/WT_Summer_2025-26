@@ -1,0 +1,277 @@
+/* =============================================
+   style.css — Student Affairs Portal
+   Red UI Theme
+   ============================================= */
+
+/* ---- 1. RESET & BASE ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #fff5f5;   /* very light red tint */
+  color: #1a1a1a;
+}
+
+/* ---- 2. HEADER ---- */
+header {
+  background-color: #c0392b;   /* deep red */
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* ---- 3. NAVIGATION ---- */
+nav {
+  background-color: #922b21;   /* darker red */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect on nav links */
+nav a:hover {
+  background-color: #c0392b;
+}
+
+/* ---- 4. MAIN CONTENT WRAPPER ---- */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---- 5. DESCRIPTION SECTION ---- */
+.description-section {
+  background-color: #ffffff;
+  border-left: 5px solid #c0392b;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.description-section h2 {
+  color: #c0392b;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+/* ---- 6. SERVICES SECTION ---- */
+.services-section {
+  background-color: #ffffff;
+  border-left: 5px solid #c0392b;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.services-section h2 {
+  color: #c0392b;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.services-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-section ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f5c6c6;
+  font-size: 0.97rem;
+}
+
+.services-section ul li:last-child {
+  border-bottom: none;
+}
+
+/* ---- 7. FORM SECTION ---- */
+.form-section {
+  background-color: #ffffff;
+  border: 2px solid #e74c3c;
+  padding: 35px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(192, 57, 43, 0.12);
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  color: #c0392b;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ---- 8. FORM GROUPS ---- */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #7b241c;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+/* Required star */
+.required {
+  color: #e74c3c;
+  margin-left: 2px;
+}
+
+/* Text / Email inputs & Textarea & Select */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #f1948a;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #1a1a1a;
+  background-color: #fff9f9;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  outline: none;
+}
+
+/* Focus state */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+  background-color: #ffffff;
+}
+
+/* Helper text under Student ID */
+.form-group small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.82rem;
+  color: #888888;
+}
+
+/* Textarea resize */
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* ---- 9. RADIO BUTTONS ---- */
+.radio-group {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-weight: normal;
+  color: #1a1a1a;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.radio-label input[type="radio"] {
+  accent-color: #c0392b;   /* colors the radio button itself */
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ---- 10. SUBMIT BUTTON ---- */
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background-color: #c0392b;
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+}
+
+/* Hover effect on submit button */
+.submit-btn:hover {
+  background-color: #922b21;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* ---- 11. FOOTER ---- */
+footer {
+  background-color: #7b241c;
+  color: #f5c6c6;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.88rem;
+  letter-spacing: 0.3px;
+}
+
+/* ---- 12. RESPONSIVE (mobile) ---- */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .form-section {
+    padding: 25px 20px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="University Student Affairs Portal – submit transcript requests, ID card issues, and general inquiries online." />
+  <title>Student Affairs Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>🎓 Student Affairs Portal</h1>
+    <p>Your one-stop portal for transcript requests, ID card issues, and general inquiries.</p>
+  </header>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- Home / Description Section -->
+    <section id="home" class="description-section">
+      <h2>Welcome to Student Services</h2>
+      <p>
+        The Student Affairs Department is here to help you with all your academic needs.
+        Use this portal to submit your requests quickly and easily — no need to visit the office in person.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2>Available Services</h2>
+      <ul>
+        <li>📄 <strong>Transcript Request</strong> – Get an official copy of your academic record.</li>
+        <li>🪪 <strong>ID Card Issues</strong> – Report lost/damaged cards or request a new one.</li>
+        <li>💬 <strong>General Inquiry</strong> – Ask any question related to student affairs.</li>
+      </ul>
+    </section>
+
+    <!-- Service Request Form -->
+    <section id="contact" class="form-section">
+      <h2>Submit a Service Request</h2>
+
+      <form action="#" method="post">
+
+        <!-- Student Name -->
+        <div class="form-group">
+          <label for="student-name">Student Name <span class="required">*</span></label>
+          <input
+            type="text"
+            id="student-name"
+            name="student_name"
+            placeholder="e.g. Jane Doe"
+            required
+          />
+        </div>
+
+        <!-- Student ID -->
+        <div class="form-group">
+          <label for="student-id">Student ID <span class="required">*</span></label>
+          <input
+            type="text"
+            id="student-id"
+            name="student_id"
+            placeholder="e.g. 2024001234"
+            maxlength="10"
+            required
+          />
+          <small>Maximum 10 characters</small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. jane@university.edu"
+            required
+          />
+        </div>
+
+        <!-- Service Type -->
+        <div class="form-group">
+          <label for="service-type">Service Type <span class="required">*</span></label>
+          <select id="service-type" name="service_type" required>
+            <option value="" disabled selected>-- Select a service --</option>
+            <option value="transcript">Transcript Request</option>
+            <option value="id-card">ID Card Issue</option>
+            <option value="general">General Inquiry</option>
+          </select>
+        </div>
+
+        <!-- Urgency Level (Radio Buttons) -->
+        <div class="form-group">
+          <label>Urgency Level <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="urgency" value="low" required /> Low
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="urgency" value="medium" /> Medium
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="urgency" value="high" /> High
+            </label>
+          </div>
+        </div>
+
+        <!-- Additional Details -->
+        <div class="form-group">
+          <label for="details">Additional Details</label>
+          <textarea
+            id="details"
+            name="details"
+            rows="5"
+            placeholder="Describe your request in detail..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit Request</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2024 University Student Affairs Department. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
